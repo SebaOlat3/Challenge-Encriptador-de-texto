@@ -1,0 +1,46 @@
+.botones__entrada {
+    display: flex;
+    width: 80%;
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .botones__entrada{
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .botones__entrada {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+.boton__encriptar {
+    background: #F26A4B;
+    border: none;
+    border-radius: 10px;
+    color: #fdfdfd;
+    padding: 1rem;
+}
+
+.boton__desencriptar {
+    background: #F26A4B;
+    border: none;
+    border-radius: 10px;
+    color: #fdfdfd;
+    padding: 1rem;
+}
+
+.boton__copiar {
+    background: #F26A4B;
+    border: none;
+    display:none;
+    margin-top:20px;
+    border-radius: 5px;
+    color: #fdfdfd;
+    padding: 1rem;
+    margin-bottom: 20px;
+}

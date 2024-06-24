@@ -1,0 +1,39 @@
+.texto__entrada {
+    border: none;
+    font-family: Open Sans;
+    font-size: 20px;
+    background-color:#8bb7f492;
+    color: #484b56;
+    width: 80%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    padding: 15px;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+
+.input[contenteditable="true"]:empty:before {
+    content: attr(data-placeholder);
+    color: #484b56d6;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .texto__entrada {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .texto__entrada {
+        height: 200px;
+        max-height: 250px;
+        font-size: 15px;
+    }
+}

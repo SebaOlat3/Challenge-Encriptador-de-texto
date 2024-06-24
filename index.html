@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto</title>
+        <script src="./encriptador.js"> </script>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="css/style-estructura/style-header.css">
+        <link rel="stylesheet" href="css/style-estructura/style-main.css">
+        <link rel="stylesheet" href="css/style-estructura/style-footer.css">
+        <link rel="stylesheet" href="css/texto-entrada.css">
+        <link rel="stylesheet" href="css/botones.css">
+    </head>
     
-</body>
+    <body>
+        <header class="titulo">
+            <h1  class="titulo__texto">Mensaje Encriptado</h1>
+            
+        </header>
+        <main class="estructura">
+            <section class="estructura__entrada">
+                <div class="texto__entrada">
+                    <div contenteditable="true" class="input" id="texto" data-placeholder="Escribe aquí..."></div>
+                </div>
+                
+                <div class="estructura__condicion">
+                    <img class="etiqueta__imagen" src="./img/etiqueta.png" alt="!">
+                    <p class="etiqueta__texto"> Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones__entrada">
+                    <button class="boton__encriptar" onclick="encriptar()">
+                        Encriptar
+                    </button>
+                    <button class="boton__desencriptar" onclick="desencriptar()">
+                        Desencriptar
+                    </button>
+                </div>
+            </section>
+            <section class="texto__salida">
+                <div class="contSalida">
+                    <div id='hist'>
+                    </div>
+                    <img class="texto__salidaImg" src="./img/chorizardPNG.png" alt="...">
+                    <p class="texto__salidaMensaje">Ingrese texto a encriptar</p>
+                </div>
+                <div>
+                    <button class="boton__copiar" onclick="copiar()">
+                        Copiar
+                    </button>
+                </div>
+            </section>
+        </main>
+        <footer class="piepagina">
+            <div class="creador">
+                <p class="creador__nombre">Sebastián Vásquez Olate</p>
+                <p class="creador__datos">Desarrollador Front-End, Alura Latam, 2024.</p>
+            </div>
+        </footer>
+    </body>
 </html>

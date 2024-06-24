@@ -1,0 +1,136 @@
+.estructura {
+    display: flex;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.estructura__entrada {
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.estructura__condicion {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.etiqueta__imagen {
+    width: 25px;
+    height: 25px;
+}
+
+.etiqueta__texto {
+    font-family:Open Sans;
+    font-size: 15px;
+    color: #3779ca;
+    margin-top: 5px;
+}
+
+.texto__salida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.texto__salidaImg {
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+}
+
+.texto__salidaMensaje {
+    font-family: Open Sans;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    box-sizing: border-box;
+    padding-right: 15px;
+}
+
+.contSalida{
+    font-family: Open Sans;
+    font-size: 20px;
+    color: #4f4949;
+    
+    width: 100%; /* Ancho para div */
+    height: 350px;
+    /* background-image: url(../../img/fondo.png); */
+    background-repeat: repeat;
+    background-color: #8bb7f492;
+    background-size: cover;
+    /* border: solid 1px #C0A8EF; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hist{
+    padding: 15px;
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: clip;
+    display: none;
+    line-break: anywhere;
+}
+
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #f3f3f3; /* Color de la barra deslizadora */
+    border-radius: 6px; /* Borde redondeado de la barra deslizadora */
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Color del fondo del scrollbar */
+}
+
+@media (max-width: 768px) {
+    .estructura {
+        flex-direction: column;
+    }
+
+    .estructura__entrada {
+        width: 90%;
+    }
+
+    .estructura__condicion {
+        width: 100%;
+    }
+
+    .texto__salida {
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .texto__salidaImg {
+        display: none;
+    }
+
+    .contSalida {
+        min-height: 175px;
+        max-height: 350px;
+        height: 175px;
+    }
+}
+
+@media (max-width: 375px) {
+    .estructura__entrada {
+        margin-left: 15px;
+    }
+
+    .texto__salida {
+        margin-left: 15px;
+    }
+
+    .texto__salidaMensaje {
+        font-size: 20px;
+    }
+}
